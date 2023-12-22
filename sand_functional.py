@@ -18,7 +18,6 @@ def is_move_ok(grid, x_from, y_from, x_to, y_to):
     (1) the destination must be in bounds,
     (2) the destination must be empty, and
     (3) the move must not violate the corner rule.
-
     The corner rule states that for a down-right or down-left move, the
     cell above the destination must be empty.
     :param grid: a grid with rocks and sand
@@ -37,6 +36,7 @@ def is_move_ok(grid, x_from, y_from, x_to, y_to):
             return True
         else:
             return False
+        #I want to see if this shows up on the master
 
 def do_move(grid, x_from, y_from, x_to, y_to):
     """
